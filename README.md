@@ -1,7 +1,7 @@
 # SubClass-JsonConverter
 SubClass JsonConverter
 
-
+```CSharp
 var x1 = JsonSerializer.Serialize(interface1, typeof(Interface1), options);
 Console.WriteLine(x1);
 // result when not using converter
@@ -25,3 +25,4 @@ Console.WriteLine(x15);
   "Class1Property3": ""
 }
  */
+'''
