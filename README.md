@@ -2,6 +2,21 @@
 SubClass JsonConverter
 
 ```csharp
+JsonSerializerOptions options = new JsonSerializerOptions
+{
+    PropertyNameCaseInsensitive = true,
+    //Converters = { new SubClassConverter() },
+    DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingDefault,
+    WriteIndented = true,
+};
+JsonSerializerOptions options1 = new JsonSerializerOptions
+{
+    PropertyNameCaseInsensitive = true,
+    Converters = { new SubClassJsonConverter() },
+    DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingDefault,
+    WriteIndented = true,
+};
+
 var x1 = JsonSerializer.Serialize(interface1, typeof(Interface1), options);
 Console.WriteLine(x1);
 // result when not using converter
