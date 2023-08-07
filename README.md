@@ -2,6 +2,14 @@
 SubClass JsonConverter
 
 ```csharp
+Interface1 interface1 = new Class1 {
+    Class1Property1 = "", Class1Property2 = "",
+    Class1Property3 = "",
+    Interface1Property1 = "",
+    Interface1Property2 = "",
+    Interface1Property3 = ""
+};
+
 JsonSerializerOptions options = new JsonSerializerOptions
 {
     PropertyNameCaseInsensitive = true,
