@@ -1,7 +1,7 @@
 # SubClass-JsonConverter
 SubClass JsonConverter
 
-```CSharp
+```csharp
 var x1 = JsonSerializer.Serialize(interface1, typeof(Interface1), options);
 Console.WriteLine(x1);
 // result when not using converter
