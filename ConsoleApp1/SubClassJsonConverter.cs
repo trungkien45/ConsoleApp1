@@ -74,7 +74,7 @@ namespace ConsoleApp1
                                                          null);
 
 
-            // Define the "get" accessor method for CustomerName.
+            // Define the "get" accessor method for Interface1Property1.
             MethodBuilder interface1Property1GetPropMthdBldr =
                 tb.DefineMethod("get_Interface1Property1",
                                            getSetAttr1,
@@ -87,7 +87,7 @@ namespace ConsoleApp1
             interface1Property1GetIL.Emit(OpCodes.Ldfld, interface1Property1Bldr);
             interface1Property1GetIL.Emit(OpCodes.Ret);
 
-            // Define the "set" accessor method for CustomerName.
+            // Define the "set" accessor method for Interface1Property1.
             MethodBuilder interface1Property1SetPropMthdBldr =
                 tb.DefineMethod("set_Interface1Property1",
                                            getSetAttr1,
@@ -117,7 +117,7 @@ namespace ConsoleApp1
                                                          null);
 
 
-            // Define the "get" accessor method for CustomerName.
+            // Define the "get" accessor method for Interface1Property2.
             MethodBuilder interface1Property2GetPropMthdBldr =
                 tb.DefineMethod("get_Interface1Property2",
                                            getSetAttr2,
@@ -130,7 +130,7 @@ namespace ConsoleApp1
             interface1Property2GetIL.Emit(OpCodes.Ldfld, interface1Property2Bldr);
             interface1Property2GetIL.Emit(OpCodes.Ret);
 
-            // Define the "set" accessor method for CustomerName.
+            // Define the "set" accessor method for Interface1Property2.
             MethodBuilder interface1Property2SetPropMthdBldr =
                 tb.DefineMethod("set_Interface1Property2",
                                            getSetAttr2,
@@ -160,7 +160,7 @@ namespace ConsoleApp1
                                                          null);
 
 
-            // Define the "get" accessor method for CustomerName.
+            // Define the "get" accessor method for Interface1Property3.
             MethodBuilder interface1Property3GetPropMthdBldr =
                 tb.DefineMethod("get_Interface1Property3",
                                            getSetAttr3,
@@ -173,7 +173,7 @@ namespace ConsoleApp1
             interface1Property3GetIL.Emit(OpCodes.Ldfld, interface1Property3Bldr);
             interface1Property3GetIL.Emit(OpCodes.Ret);
 
-            // Define the "set" accessor method for CustomerName.
+            // Define the "set" accessor method for Interface1Property3.
             MethodBuilder interface1Property3SetPropMthdBldr =
                 tb.DefineMethod("set_Interface1Property3",
                                            getSetAttr3,
